@@ -68,7 +68,8 @@ export default function ListScreen({navigation, route}){
             d.push(item);
             progress = (index + 1) / total;
             setProgress(progress);
-        });;
+        });
+        setProgress(progress);
         setData(d); 
       }
       setError(null);     
