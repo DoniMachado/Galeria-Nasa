@@ -6,7 +6,7 @@ export default function ProgressBar({ isLoading, progress }) {
     const [value, setValue] = useState(0);
 
     useEffect(() => {
-      if(!isLoading){
+      if(isLoading){
         setValue(progress);
       }else{
         setValue(0);
